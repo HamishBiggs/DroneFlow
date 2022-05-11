@@ -1,0 +1,79 @@
+// s/n of primary camera
+primary_camera=18383707
+
+// s/n of secondary camera
+secondary_camera=18383709
+
+// path for saving images (remember \ at the end). //Note: an extra subdirectory with the current system time will be created within this directory.
+image_path=C:\Drone_flow\images\
+
+// image file format: 0 = RAW, 1 = JPG, 2=PNG //Note: PNG has very very slow write speed and is not recommended. 
+image_type=0
+
+// Pixel format type: see Blackfly S Technical Reference for details
+pixel_format=RGB8Packed
+
+// capture frequency in Hz (10 Hz is the max recommended stable frame rate for stereoscopic RGB full frame)
+capture_frequency=10
+
+// exposure time in us
+exposure_time=0
+
+// auto exposure setting: 0 = off, 1 = once, 2 = continuous
+exposure_auto=2
+
+// auto exposure lighting mode: 0 = autodetect, 1 = front, 2 = back, 3 = normal //Note: do not use 'autodetect' causes error. Recommend 'normal'.
+auto_elm=3
+
+// auto exposure light metering mode: 0 = average, 1 = spot, 2 = partial, 3 = centre weighted, 4 = histogram peak
+auto_emm=0
+
+// auto exposure time lower limit in us
+auto_etll=50
+
+// auto exposure time upper limit in us (1/1000 for limited motion blur) //WARNING: When testing in low light this needs to be increased, then decreased again for field deployment.
+auto_etul=1000
+
+// auto exposure control priority: 0 = gain, 1 = exposure time. //Note: In the field use 1 for exposure time. In the office (low light) gain is more appropriate.
+auto_ecp=1
+
+// Auto Gain setting: 0 = off, 1 = once, 2 = continuous
+gain_auto=2
+
+//Auto white balance setting: 0 = off, 1 = once, 2 = continuous //Recommend 0 //Note: when continuous the response of the cameras can be quite different and they diverge in colour and brightness...
+auto_wb=0
+
+//Defined white balance if auto white balance off. Red:Green x1000 for integer input//Recommend 0.54x1000=540
+manual_wb_rg=540;
+
+//Defined white balanceif auto white balance off. Blue:Green x1000 for integer input//Recommend 1.66x1000=1660
+manual_wb_bg=1660;
+
+//Auto exposure grey value auto: 0 = off, 1 = continuous
+//For manual control, set Target Grey Value Auto to Continuous and then set the desired image average in Target Grey Value. This value is a percentage of the maximum pixel value.
+//For automatic control, set Target Grey Value Auto to Off. The target image average is then automatically determined according to user-defined AE modes and other AE features.
+auto_GV_on=1;
+
+//Auto exposure target grey value for continuous mode: Expressed as an integer percentage. I.e. 40%.
+target_GV=40;
+
+//Gamma correction on: 0 = off, 1 = on
+gamma_correction_on=1
+
+//Gamma correction value: x 10000 for integer output. I.e. 0.4545x10000=4545 (where 0.4545 is recommended for sRGB).
+gamma_value=4545;
+
+// X,Y pixel decimation: set to 1 or 2. //Note1: These cameras can't support decimation more than 2. //Note2: There are also binning methods for averaging pixels available.
+x_decimation=1
+y_decimation=1
+
+// Width, height of Region of Interest (2448 × 2048 is max)
+x_roi=2448
+y_roi=2048
+
+// X,Y coordinates of top left corner of Region of Interest. //Note: Image origin is top left.
+x_offset=0
+y_offset=0
+trigger_port=COM7
+
+//Runtime minor bugs: Setting Auto Exposure Lighting Mode to 'autodetect' causes errors. Recommend 'normal'.
