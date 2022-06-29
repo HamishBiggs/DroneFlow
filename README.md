@@ -12,7 +12,4 @@ Warning: It is expected that users of this repository will be proficient program
 Hopefully some of the code will prove useful, or at least speed up parallel development projects. Some of the code can be provided as compiled versions if needed for use with the Matlab Runtime Libraries (upon reasonable request).
 
 If code is useful and is used for scientific purposes, then please cite: "Biggs, H.J. (2022). Drone Flow User Guide. NIWA, Christchurch, New Zealand."
-This user guide provides information on the functions released in this toolbox in the appendices. The user guide is available here: #######
-
-To do:
-Add link to the 'Drone Flow User Guide' where it is hosted on Research Gate once it is released.
+This user guide provides information on the functions released in this toolbox in the appendices. The user guide is available here: https://www.researchgate.net/publication/361598754_Drone_Flow_User_Guide_v11
